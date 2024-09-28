@@ -155,7 +155,14 @@ int main() {
     }
         
     cout << "BLACKJACK" << endl;
-    
+   
+    cout << "Dealer's hand:" << endl;
+    cout << "1. ";
+    cout << dealerHand[0].first;
+    if (dealerHand[0].first == '1') cout << "0";
+    cout << " de " << dealerHand[0].second << endl;
+    cout << endl;
+
     while (true) {
         PrintHand(playerHand, "Player");
         if (CheckBust(playerHand)) {
